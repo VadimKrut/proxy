@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pathcreator.ru.parse.proto.greeting;
+
+option java_package = "pathcreator.ru.parse.proto.greeting.service";
+option java_outer_classname = "GreetingServiceProtoJava";
+
+import "greeting/model/GreetingModelProto.proto";
+
+service GreetingServiceProto {
+
+  rpc greeting(RequestModel) returns (ResponseModel);
+}
